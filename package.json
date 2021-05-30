@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mariana-umanzor/semana_19_progra/issues"
   },
-  "homepage": "https://github.com/mariana-umanzor/semana_19_progra#readme"
+  "homepage": "https://github.com/mariana-umanzor/semana_19_progra#readme",
+  "dependencies": {
+    "mongoose": "^5.12.12"
+  }
 }
