@@ -1,0 +1,23 @@
+
+const express = require("express"),
+app = express(),
+bodyParser = require("body-parser"),
+Product = require("./models/product"),
+methodOverride = require("method-override");
+mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost/CURD10",{
+useNewUrlParser:true,
+useUnifiedTopology:true,
+useCreateIndex:true
+});
+app.set("view engine","ejs");
+app.use(bodyParser.urlencoded({ extended:true }));
+app.use(methodOverride("_method"));
+//Routes and logic will go here
+app.listen(2000,(err)=>{
+if(err){
+console.log(err);
+}else {
+console.log("Server Started At PORT 2000");
+}
+})
